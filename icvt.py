@@ -1,11 +1,10 @@
 # This file contains the ancestral class of application used in ICVT. Any other tool can inherit from this.
 
 # ICVT modules
-from modules.utility import utils
-from modules.video import vid_data
+from ..utility import utils
+from ..video import vid_data
 
 # Extra packages
-import tkinter as tk
 import pandas as pd
 from PIL import Image, ImageTk
 import numpy as np
@@ -17,6 +16,7 @@ import sys
 import time
 import random
 import logging
+import tkinter as tk
 from datetime import datetime
 from datetime import timedelta
 
