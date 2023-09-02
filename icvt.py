@@ -3,6 +3,7 @@
 # ICVT modules
 from ..utility import utils
 from ..video import vid_data
+from ..video import video_inter
 
 # Extra packages
 import pandas as pd
@@ -97,7 +98,7 @@ class AppAncestor:
         i: int
         for i, filepath in enumerate(video_filepaths):
             if filepath.endswith('.mp4') or filepath.endswith('.avi'):
-                video = vid_data.Video_file(video_filepaths[i], self.main_window, self.ocr_roi)
+                video = video_inter.VideoFileInteractive(video_filepaths[i], self.main_window, self.ocr_roi)
                 video_files.append(video)
                 video_data_entry = [video.filepath, video.start_time, video.end_time]
                 video_data.append(video_data_entry)
