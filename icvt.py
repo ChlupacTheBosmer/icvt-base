@@ -1,4 +1,4 @@
-# This file contains the ancestral class of application used in ICVT. Any other tool can inherit from this.
+# This file contains the ancestral class of application used in ICVT. Any other tool can inherit from this
 
 # ICVT modules
 from ..utility import utils
